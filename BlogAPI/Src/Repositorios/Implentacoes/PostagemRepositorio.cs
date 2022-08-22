@@ -4,8 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using BlogAPI.Src.Contextos;
 using BlogAPI.Src.Modelos;
-using BlogPessoal.src.contextos;
-using BlogPessoal.src.modelos;
+//using BlogPessoal.src.contextos;
+//using BlogPessoal.src.modelos;
 using Microsoft.EntityFrameworkCore;
 
 namespace BlogAPI.Src.Repositorios.Implentacoes
@@ -127,7 +127,32 @@ namespace BlogAPI.Src.Repositorios.Implentacoes
                 await _contexto.SaveChangesAsync();
             }
 
-            #endregion Métodos
-        
+        public Task<List<Tema>> PegarTodosTemasAsync()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Tema> PegarTemaPeloIdAsync(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task NovoTemaAsync(Tema tema)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task AtualizarTemaAsync(Tema tema)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task DeletarTemaAsync(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        #endregion Métodos
+
     }
 }

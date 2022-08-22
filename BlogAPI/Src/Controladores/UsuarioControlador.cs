@@ -2,8 +2,8 @@
 using BlogAPI.Src.Repositorios;
 using BlogAPI.Src.Repositorios.Implentacoes;
 using BlogAPI.Src.Servicos;
-using BlogPessoal.src.dtos;
-using BlogPessoal.src.repositorios;
+//using BlogPessoal.src.dtos;
+//using BlogPessoal.src.repositorios;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;

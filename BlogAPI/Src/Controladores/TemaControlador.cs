@@ -1,7 +1,7 @@
 ﻿using BlogAPI.Src.Modelos;
 using BlogAPI.Src.Repositorios;
-using BlogPessoal.src.dtos;
-using BlogPessoal.src.repositorios;
+//using BlogPessoal.src.dtos;
+//using BlogPessoal.src.repositorios;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Threading.Tasks;

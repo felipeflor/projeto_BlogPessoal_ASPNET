@@ -4,8 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using BlogAPI.Src.Contextos;
 using BlogAPI.Src.Modelos;
-using BlogPessoal.src.contextos;
-using BlogPessoal.src.modelos;
+//using BlogPessoal.src.contextos;
+//using BlogPessoal.src.modelos;
 using Microsoft.EntityFrameworkCore;
 
 
