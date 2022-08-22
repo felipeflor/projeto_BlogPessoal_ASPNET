@@ -30,17 +30,19 @@ namespace BlogAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //Adcionado contexto
-            services.AddDbContext<BlogPessoalContexto>(opt => opt.UseSqlServer(Configuration["ConnectionStringsDev:DefaultConnection"]));
-
-            //Repositorios
+            // Configuração de Banco de dados
+            services.AddDbContext<BlogPessoalContexto>
+            (opt =>
+            opt.UseSqlServer(Configuration["ConnectionStringsDev:DefaultConnection"]));
+            // Repositorios
             services.AddScoped<IUsuario, UsuarioRepositorio>();
             services.AddScoped<ITema, TemaRepositorio>();
-
-            // Adcionando serviço de Controladores
+            services.AddScoped<IPostagem, PostagemRepositorio>();
+            // Controladores
             services.AddCors();
             services.AddControllers();
         }
+
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, BlogPessoalContexto contexto)

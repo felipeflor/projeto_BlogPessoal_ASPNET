@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using BlogAPI.Src.Utilidades;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
@@ -24,6 +25,10 @@ namespace BlogAPI.Src.Modelos
         public string Email { get; set; }
         public string Senha { get; set; }
         public string Foto { get; set; }
+        
+        [Required]
+        public TipoUsuario Tipo { get; set; }
+
 
         [JsonIgnore, InverseProperty("Criador")]
         public List<Postagem> MinhasPostagens { get; set; }
